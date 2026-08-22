@@ -1,0 +1,116 @@
+.post-list
+  padding: 0
+
+  .post-item
+    margin-bottom: 1rem
+    margin-left: 0
+    list-style-type: none
+
+    .meta
+      display: block
+      margin-right: 16px
+      min-width: 100px
+      color: $color-meta
+      font-size: 14px
+
+@media (min-width: 480px)
+  .post-list
+    .post-item
+      display: flex
+      margin-bottom: 5px
+
+      .meta
+        text-align: left
+
+.project-list
+  padding: 0
+  list-style: none
+
+  .project-item
+    margin-bottom: 5px
+    p
+      display: inline
+
+#terminal
+  margin-bottom: 2.5rem
+
+.terminal
+  border: 1px solid $color-border
+  border-radius: 6px
+  background: $color-background-code
+  overflow: hidden
+
+  .terminal-bar
+    display: flex
+    align-items: center
+    padding: 8px 12px
+    border-bottom: 1px solid $color-border
+    background: lighten($color-background-code, 4%)
+
+    .dot
+      display: inline-block
+      width: 10px
+      height: 10px
+      margin-right: 6px
+      border-radius: 50%
+
+    .dot-r
+      background: #e05561
+
+    .dot-y
+      background: #d19a66
+
+    .dot-g
+      background: #8ec07c
+
+    .terminal-label
+      margin-left: 10px
+      color: $color-meta
+      font-size: 12px
+
+  .terminal-body
+    padding: 14px 16px
+    font-family: $font-family-mono
+    font-size: 13px
+    line-height: 1.6
+
+    p
+      margin: 0 0 4px
+      text-align: left
+      text-indent: 0
+
+    .tp
+      margin-right: 6px
+      color: $color-accent-1
+      font-weight: 700
+
+    .out
+      margin-left: 1.2rem
+      color: $color-meta
+
+    .cursor
+      display: inline-block
+      width: 7px
+      height: 1em
+      margin-left: 2px
+      vertical-align: text-bottom
+      background: $color-accent-1
+      animation: blink 1s step-end infinite
+
+@keyframes blink
+  0%, 100%
+    opacity: 1
+  50%
+    opacity: 0
+
+#visitors
+  margin-top: 2.5rem
+  padding-top: 1rem
+  border-top: 1px dotted $color-border
+  color: $color-meta
+  text-align: center
+  font-size: 12px
+
+  .visitor-count
+    margin: 0
+    text-align: center
